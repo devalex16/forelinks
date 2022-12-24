@@ -1,27 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 :root {
-	--cor0: #FFFFFF;
-	--cor1: #11001C;
+	/*COR DA FONTE*/
+	--color0: #FFFFFF;
+	/*COR DO FUNDO */
+	--bg: #11001C;
+	/*FONTE FAMILY*/
 	--font-normal: 'Inter', sans-serif;
+	/*TRANSPARÊNCIA DOS BOTÃOS*/
 	--transparent: rgba(255, 255, 255, 0.2);
+	/*EFEITOS*/
+	--effect: rgba(255, 255, 255, 0.05);
+	/*IMAGEM DE FUNDO*/
+	--bg-image: url(./assets/black.png);
+}
+
+.light {
+	--color0: black;
+	--bg: white;
+	--transparent: rgba(0, 0, 0, 0.2);
+	--effect: rgba(0, 0, 0, 0.05);
+	--bg-image: url(./assets/light.png);
 }
 
 * {
 	padding: 0px;
 	margin: 0px;
 	font-family: var(--font-normal);
-	color: var(--cor0);
+	color: var(--color0);
 	box-sizing: border-box;
 }
 
 body {
 	display: flex;
-  align-items: top;
+	flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: var(--cor0);
-  background-image: url(./assets/black.png);
+  background-color: var(--bg);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,7 +62,7 @@ body {
 	height: 150px;
   object-fit: cover;
   border-radius: 100px;
-  border: 2px solid var(--cor0);
+  border: 2px solid var(--color0);
   margin-top: 50px;
   margin-bottom: 5px;
   box-shadow: 0px 0px 20px black;
@@ -57,6 +74,7 @@ ul {
 	flex-direction: column;
 	gap: 10px;
 	font-size: 1.1em;
+	margin: 0px 20px;
 }
 
 ul li > a {
@@ -74,7 +92,7 @@ ul li > a {
 }
 
 ul li > a:hover {
-	background: rgba(255, 255, 255, 0.05);
+	background: var(--effect);
 	border: 1.5px solid white;
 	padding: 20px;
 }
@@ -83,19 +101,51 @@ ul li > a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 	gap: 40px;
 	margin-top: 50px;
 }
 
 #redes-sociais > a > img {
 	width: 35px;
+	height: 35px;
 }
 
 #redes-sociais > a {
-	/*display: flex;
-	flex-direction: row;
-	gap: 40px;*/
 	text-decoration: none;
 	background: none;
 	color: none;
+	transition: 0.3s;
+}
+
+#redes-sociais > a:hover {
+	border-radius: 100px;
+	border: 1px solid var(--color0);
+	padding: 10px 15px;
+	background: var(--transparent);
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-top: 20px;
+}
+
+article > h1 {
+	text-align: left;
+}
+
+article > a {
+	width: 300px;
+	text-indent: 10px;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+footer {
+	text-align: center;
+	font-size: .9em;
+	position: absolute;
+	bottom: 12px;
 }
