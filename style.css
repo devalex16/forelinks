@@ -13,6 +13,7 @@
 	--effect: rgba(255, 255, 255, 0.05);
 	/*IMAGEM DE FUNDO*/
 	--bg-image: url(./assets/black.png);
+	--bg-switch: url(./assets/icons/buttons/moon.svg);
 }
 
 .light {
@@ -21,6 +22,7 @@
 	--transparent: rgba(0, 0, 0, 0.2);
 	--effect: rgba(0, 0, 0, 0.05);
 	--bg-image: url(./assets/light.png);
+	--bg-switch: url(./assets/icons/buttons/sun.svg);
 }
 
 * {
@@ -50,22 +52,79 @@ body {
 	width: 390px;
 }
 
+@media (min-width: 720px) {
+	#tela {
+		width: 790px;
+	}
+}
+
 #profile {
 	text-align: center;
 	font-size: 1.1em;
 	font-weight: 500;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 #profile > img {
 	width: 150px;
 	height: 150px;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 400px;
   border: 2px solid var(--color0);
-  margin-top: 50px;
   margin-bottom: 5px;
   box-shadow: 0px 0px 20px black;
+}
+
+@media (min-width: 720px) {
+	#profile {
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+	
+	#profile > img {
+		width: 290px;
+		height: 290px;
+	}
+}
+
+#switch {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#switch > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	background: var(--transparent);
+	border-radius: 400px;
+	border: 1px solid var(--color0);
+}
+
+#switch > div > button {
+	width: 30px;
+	height: 30px;
+	background: white var(--bg-switch);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	border-radius: 100px;
+}
+
+@media (min-width: 720px) {
+	#switch > div {
+		width: 90px;
+		height: 90px;
+	}
+	
+	#switch > div > button {
+		width: 65px;
+		height: 65px;
+	}
 }
 
 ul {
@@ -93,8 +152,26 @@ ul li > a {
 
 ul li > a:hover {
 	background: var(--effect);
-	border: 1.5px solid white;
+	border: 1.5px solid var(--color0);
 	padding: 20px;
+}
+
+@media (min-width: 720px) {
+	ul {
+		gap: 20px;
+		font-size: 2.1em;
+		margin: 0px 40px;
+	}
+	
+	ul li > a {
+		border-radius: 30px;
+		padding: 25px;
+	}
+	
+	ul li > a:hover {
+		border: 2.5px solid var(--color0);
+		padding: 40px;
+	}
 }
 
 #redes-sociais {
@@ -125,22 +202,23 @@ ul li > a:hover {
 	background: var(--transparent);
 }
 
-article {
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	margin-top: 20px;
-}
-
-article > h1 {
-	text-align: left;
-}
-
-article > a {
-	width: 300px;
-	text-indent: 10px;
-	font-family: sans-serif;
-	text-align: left;
+@media (min-width: 720px) {
+	#redes-sociais {
+		gap: 70px;
+		margin-top: 100px;
+	}
+	
+	#redes-sociais > a img {
+		width: 70px;
+		height: 70px;
+	}
+	
+	#redes-sociais > a:hover {
+		border-radius: 400px;
+		border: 1px solid var(--color0);
+		padding: 20px 30px;
+		background: var(--transparent);
+	}
 }
 
 footer {
@@ -148,4 +226,11 @@ footer {
 	font-size: .9em;
 	position: absolute;
 	bottom: 12px;
+}
+
+@media (min-width: 720px) {
+	footer {
+		font-size: 1.9em;
+		bottom: 20px;
+	}
 }
