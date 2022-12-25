@@ -15,3 +15,9 @@
 <p>
  Um projeto feito com a ajuda do Curso da <a href="https://www.rocketseat.com.br">RocketSeat - DevLinks</a> parecido com site da abre.bio para direcionar usuários para outros lugares.
 </p>
+
+### Tecnologias
+<p>
+ Feito com HTML,CSS e JS com envolvimento mais de Design(CSS) para chegar esse ponto.
+</p>
+
