@@ -6,7 +6,7 @@
 	ForeLinks um site de direcionamento de usuários 🔥
 </p>
 <p align="center">
- <a href="#produçao">Produção</a> • 
+ <a href="#producao">Produção</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
@@ -20,4 +20,10 @@
 <p>
  Feito com HTML,CSS e JS com envolvimento mais de Design(CSS) para chegar esse ponto.
 </p>
+
+## ✔️ Técnicas e Tecnologias utilizadas 
+ - ``HTML`` ``CSS`` ``JavaScript``
+ - ``Conceitos de Responsividade``
+ - ``Design com FIGMA``
+ - ``Fontes Externas``
 
