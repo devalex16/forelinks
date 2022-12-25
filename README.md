@@ -27,3 +27,13 @@
  - ``Design com FIGMA``
  - ``Fontes Externas``
 
+<p align="center">
+✔️ PROJETO FEITO ✔️
+</p>
+
+### Licença
+
+Licença do Projeto [MIT License](./LICENSE)
+
+### Autor
+[<img width="120px" src="https://github.com/devalex16.png"/><sub>Gollinha - Alex Silva</sub>](https://github.com/devalex16)
