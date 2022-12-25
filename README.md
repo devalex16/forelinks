@@ -31,9 +31,13 @@
 ✔️ PROJETO FEITO ✔️
 </p>
 
+<p align="center">
+ <a href="https://forelinks.vercel.app/">Site do Projeto - ForeLinks</a>
+</p>
+
 ### Licença
 
 Licença do Projeto [MIT License](./LICENSE)
 
 ### Autor
-[<img width="120px" src="https://github.com/devalex16.png"/><sub>Gollinha - Alex Silva</sub>](https://github.com/devalex16)
+[<img width="100px" src="https://github.com/devalex16.png"/><div>Gollinha - Alex Silva</div>](https://github.com/devalex16)
